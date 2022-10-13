@@ -17,5 +17,13 @@ def ej2():
     ed = Eq( sin(x)*y(x).diff(),y(x)*ln(y(x)))
     print(dsolve(ed, y(x)))
 
+def ej3():
+    t = symbols("t")
+    y = Function("y")
+    ed = Eq( y(t).diff() - y(t)/(t-2),2*(t-2)**2)
+    print(dsolve(ed, y(t)))
+
+
+
 
 
