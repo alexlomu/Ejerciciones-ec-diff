@@ -23,7 +23,9 @@ def ej3():
     ed = Eq( y(t).diff() - y(t)/(t-2),2*(t-2)**2)
     print(dsolve(ed, y(t)))
 
-
-
-
+def ej4():
+    t = symbols("t")
+    y = Function("y")
+    ed = Eq( 2*t*y(t).diff() - y(t),3*t**2)
+    print(dsolve(ed, y(t)))
 
